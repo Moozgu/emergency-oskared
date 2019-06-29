@@ -70,5 +70,6 @@ public class ChatSocket extends TextWebSocketHandler implements WebSocketConfigu
                 .filter(s -> s.getWebSocketSession().getId().equals(session.getId()))
                 .findAny()
                 .orElseThrow(IllegalStateException::new);
+
     }
 }
