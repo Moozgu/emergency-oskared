@@ -15,7 +15,7 @@
         </form>
     </center>
     <script>
-        var webSocket = new WebSocket("ws://localhost:8080/chat");
+        var webSocket = new WebSocket("ws://https://radiant-shelf-58506.herokuapp.com/");
         webSocket.onopen = function(ev) {
              console.log("otwarto połączenie");
              document.getElementById("info").innerHTML = "Połączenie otwarte!";
